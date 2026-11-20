@@ -1,0 +1,177 @@
+{
+  "rules": {
+    "out_harbour_lettings": {
+      "key": "harbour lettings",
+      "dir": "out",
+      "label": "Harbour Lettings",
+      "action": "category",
+      "category": "Rent",
+      "updatedAt": "2026-11-01T09:00:00.000Z",
+      "note": "This is the whole flat's rent. I pay it and my flatmates pay me their share."
+    },
+    "in_s_patel": {
+      "key": "s patel",
+      "dir": "in",
+      "label": "S Patel",
+      "action": "category",
+      "category": "Rent",
+      "updatedAt": "2026-11-01T09:00:00.000Z",
+      "note": "Flatmate paying their share of rent and bills."
+    },
+    "in_j_okafor": {
+      "key": "j okafor",
+      "dir": "in",
+      "label": "J Okafor",
+      "action": "category",
+      "category": "Rent",
+      "updatedAt": "2026-11-01T09:00:00.000Z",
+      "note": "Flatmate paying their share of rent and bills."
+    },
+    "in_northwind_ltd": {
+      "key": "northwind ltd",
+      "dir": "in",
+      "label": "Northwind Ltd",
+      "action": "income",
+      "category": null,
+      "updatedAt": "2026-11-01T09:00:00.000Z"
+    },
+    "in_mum": {
+      "key": "mum",
+      "dir": "in",
+      "label": "Mum",
+      "action": "ignore",
+      "category": null,
+      "updatedAt": "2026-11-01T09:00:00.000Z",
+      "note": "Family money is pass-through: I pay things for them and they pay me back."
+    },
+    "out_a_rivera": {
+      "key": "a rivera",
+      "dir": "out",
+      "label": "A Rivera",
+      "action": "loan",
+      "category": null,
+      "updatedAt": "2026-11-01T09:00:00.000Z",
+      "note": "Lent to a friend for festival tickets."
+    },
+    "out_apple_com": {
+      "key": "apple com",
+      "dir": "out",
+      "label": "Apple.com/bill",
+      "action": "category",
+      "category": "Subscriptions",
+      "updatedAt": "2026-11-01T09:00:00.000Z"
+    },
+    "out_barber_co": {
+      "key": "barber co",
+      "dir": "out",
+      "label": "Barber Co",
+      "action": "category",
+      "category": "Personal Care",
+      "updatedAt": "2026-11-01T09:00:00.000Z"
+    }
+  },
+  "facts": {
+    "_meta": {
+      "seeded": "2026-11-01T09:00:00.000Z"
+    },
+    "f1": {
+      "text": "Money from your flatmates covers their share of rent and bills. It is never income.",
+      "by": "you",
+      "at": "2026-11-01T09:00:00.000Z"
+    },
+    "f2": {
+      "text": "Family transfers are pass-through: they repay things you paid on their behalf.",
+      "by": "you",
+      "at": "2026-11-01T09:00:00.000Z"
+    },
+    "f3": {
+      "text": "Deliveroo orders from a supermarket are groceries, not takeaway.",
+      "by": "tally",
+      "at": "2026-11-01T09:00:00.000Z"
+    },
+    "f4": {
+      "text": "Money you lend to friends is an asset until it is paid back.",
+      "by": "you",
+      "at": "2026-11-01T09:00:00.000Z"
+    },
+    "f5": {
+      "text": "Fees on currency conversions are bank fees, not subscriptions.",
+      "by": "tally",
+      "at": "2026-11-01T09:00:00.000Z"
+    }
+  },
+  "holdings": {
+    "h_isa": {
+      "name": "Stocks & Shares ISA",
+      "value": 12800,
+      "kind": "investment",
+      "updatedAt": "2026-11-01T09:00:00.000Z"
+    },
+    "h_pension": {
+      "name": "Workplace pension",
+      "value": 4100,
+      "kind": "pension",
+      "updatedAt": "2026-11-01T09:00:00.000Z"
+    }
+  },
+  "budgets": {
+    "Groceries": {
+      "name": "Groceries",
+      "amount": 260,
+      "updatedAt": "2026-11-01T09:00:00.000Z"
+    },
+    "Eating_Out___Pubs": {
+      "name": "Eating Out & Pubs",
+      "amount": 220,
+      "updatedAt": "2026-11-01T09:00:00.000Z"
+    },
+    "Rent": {
+      "name": "Rent",
+      "amount": 700,
+      "updatedAt": "2026-11-01T09:00:00.000Z"
+    }
+  },
+  "cards": {
+    "acc_amex": {
+      "dueDay": 5,
+      "closeDay": 10,
+      "statement": 412.3,
+      "minPay": 25,
+      "rewards": {
+        "kind": "points",
+        "value": 18450,
+        "label": "Membership Rewards"
+      },
+      "at": "2026-11-01T09:00:00.000Z"
+    },
+    "acc_cashback": {
+      "dueDay": 22,
+      "closeDay": 28,
+      "statement": 0,
+      "minPay": 0,
+      "rewards": {
+        "kind": "cashback",
+        "value": 38.2,
+        "label": "Cashback earned"
+      },
+      "at": "2026-11-01T09:00:00.000Z"
+    }
+  },
+  "splitwise": {
+    "sw1": {
+      "name": "Sam K",
+      "gbp": 64.5
+    },
+    "sw2": {
+      "name": "Priya",
+      "gbp": -12.0
+    }
+  },
+  "subs": {},
+  "guesses": {},
+  "overrides": {},
+  "receipts": {},
+  "orders": {},
+  "loans": {},
+  "history": {}
+}
