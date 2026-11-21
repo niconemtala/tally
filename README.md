@@ -6,6 +6,10 @@ A personal finance dashboard that reads my bank accounts through Open Banking, l
 
 ![Tally home screen with mock data](docs/home.png)
 
+### The hedgehog
+
+Tally has a small pixel hedgehog. His mood follows the month, he says one true line a day from the numbers on the page, and he builds a nest from twigs earned by tidying up: answering on Learn, logging a payback, confirming a cancelled subscription. Spending less never earns twigs, so he never shames you. Tap him and he does a trick.
+
 ## The problem
 
 Banking apps show transactions. They don't show what I actually spent. My money is spread across several accounts and two credit cards, and every budgeting app I tried got the same things wrong because it only sees the raw lines:
@@ -55,9 +59,9 @@ The real Tally runs as a Claude artifact: one HTML file with no build step, whic
 | --- | --- | --- |
 | `mcp` (connectors) | Emma for balances, transactions and recurring payments via Open Banking; Gmail for receipts; a browser for looking up unknown businesses | Emma answers from [`mock/data.js`](mock/data.js); Gmail and the browser report "not connected" |
 | `db` (key-value store) | Rules, facts, budgets, holdings, card details, saved months | An in-browser store seeded from [`data/seed.json`](data/seed.json) and saved to `localStorage` |
-| `sample` (a Claude model) | Guessing categories for unknown payees and the "Explain" chat | Switched off; name-based guesses still work |
+| `sample` (a Claude model) | Guessing categories for unknown payees and the Talk to Tally chat | Switched off; name-based guesses still work, and the chat button is hidden |
 
-[`mock/runtime.js`](mock/runtime.js) is the stand-in for that runtime. [`index.html`](index.html) is the app itself, unchanged apart from loading the mock scripts and a demo banner.
+[`mock/runtime.js`](mock/runtime.js) is the stand-in for that runtime. [`index.html`](index.html) is the app itself, unchanged apart from loading the mock scripts, a demo banner and two category names made generic.
 
 ```
 My banks → Open Banking → Emma → Claude connector → Tally
